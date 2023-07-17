@@ -1,0 +1,14 @@
+{% extends 'bases/index.html' %}
+
+{% block 'tarefas' %}
+    {% for tarefa in tarefas %}
+    <div id="main">
+        
+        <label id="clicado" >{{tarefa}}</label>
+        
+        <div  id="delete" >
+            <a href="/to_do_list/excluir_tarefa/{{tarefa.id}}">X</a>
+        </div>
+    </div>
+    {% endfor %}
+{% endblock %}

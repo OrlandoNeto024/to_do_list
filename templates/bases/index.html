@@ -1,0 +1,34 @@
+{% load static  %}
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lista de tarefas</title>
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    </head>
+    <body>
+        <div id="container">
+            
+            <div id="title">
+                <h2>Lista de tarefas</h2>
+            </div>
+
+            <div id="main-container">
+                {% block 'tarefas' %}
+
+                {% endblock %}
+            </div>
+            
+            <form action="" method="POST">{% csrf_token %}
+                <div id="nova-tarefa">
+                
+                    <input id="input-nova-tarefa" name="tarefa" type="text" placeholder="Digite uma nova tarefa e pressione o botão a baixo.">
+                    
+                </div>
+            </form>
+            
+        </div>
+
+    </body>
+</html>

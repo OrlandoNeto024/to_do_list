@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #ccc;
+}
+#container{
+    width: 400px;
+    height: 550px;
+    background: #f3ce02;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px;
+    margin: 50px auto;
+    padding: 20px;
+    overflow: hidden;
+    position: relative;
+}
+#title{
+    background: #0f100b;
+    color: #f3ce02;
+    width: 400px;
+    height: 40px;
+    text-align: center;
+    padding-top: 20px;
+    border-radius: 10px;
+}
+#main{
+    border: 1px solid rgb(90, 90, 90);
+    border-radius: 5px;
+    box-shadow: 1px 1px 4px;
+    margin-top: 20px;
+    padding: 10px;
+    color: #0f100b;
+}
+#main label{
+    margin-left: 7px;
+    font-weight: bold;
+}
+
+#delete{
+    display: inline-block;
+    float: right;
+    background: #fff;
+    height: 18px;
+    width: 18px;
+    text-align: center;
+    border: 1px solid rgb(15, 16, 11);
+    border-radius: 2px;
+}
+#delete:hover{
+    background: rgba(15, 16, 11, 0.1);
+}
+#delete:active{
+    background: rgba(15, 16, 11, 0.2);
+}
+#delete a{
+    text-decoration: none;
+    color: #0f100b;
+}
+#nova-tarefa{
+    background: #f2db5a;
+    height: 50px;
+    width: 400px;
+    position: absolute;
+    bottom: 15px;
+    border: 1px solid #0f100b;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px;
+    text-align: center;
+}
+#input-nova-tarefa{
+    height: 50px;
+    width: 380px;
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 15px;
+}
+
